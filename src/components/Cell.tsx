@@ -9,7 +9,7 @@ const Cell = ({value, onClick, isGameOver}: { value: number | null, onClick: () 
             disabled={isGameOver || value !== 0}
         >
             {value === 1 && <FontAwesomeIcon icon={faX} className="text-yellow-600 text-4xl"/>}
-            {value === 2 && <FontAwesomeIcon icon={faO} className="text-cyan-600 text-4xl"/>}
+            {value === -1 && <FontAwesomeIcon icon={faO} className="text-cyan-600 text-4xl"/>}
         </button>
     );
 }
